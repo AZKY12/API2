@@ -33,7 +33,7 @@
 
         function sendMessage() {
             const weatherContent = document.getElementById('weatherContent').innerText;
-            const phoneNumber = +94768809150; // Replace with the desired phone number
+            const phoneNumber = +947688091512; // Replace with the desired phone number
 
             const username = 'azkysarafath';
             const password = 'yJZVqHb@5ypguB6';
