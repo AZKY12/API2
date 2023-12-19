@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Forecast & SMS Notifier</title>
+    <link rel="icon" type="image/x-icon" href="favicon.jpeg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecast & SMS Notifier</h1>
+        
+        <!-- Weather Forecast Form -->
+        <div class="form-group">
+            <input type="text" class="form-control" id="locationInput" placeholder="Enter Location">
+        </div>
+        <button onclick="getWeatherAndSendSMS()" class="btn btn-secondary">Get Forecast and Send SMS</button>
+
+        <!-- Display Box for SMS Notification and Windy Map -->
+        <div id="weatherDisplay">
+            <!-- SMS Notification Form -->
+            <form id="smsForm">
+                <!-- Removed the message textarea -->
+                <h2>Weather Forecast in SMS Notification Display</h2>
+                <p id="weatherContent"></p>
+                <div id="windyMap"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <footer class="text-center py-3">
+        <span class="mx-2"> API provided by: </span>
+        <a href="https://openweathermap.org/" target="_blank">
+            <img src="openweathermap_logo.png" alt="OpenWeatherMap" height="20">
+        </a>
+        <span class="mx-2"> | </span>
+        <a href="https://www.infobip.com/" target="_blank">
+            <img src="infobip_logo.svg" alt="Infobip" height="20">
+        </a>
+        <span class="mx-2"> | </span>
+        <a href="https://www.windy.com/" target="_blank">
+            <img src="Windylogo.png" alt="Windy" height="20">
+        </a>
+        <br>
+        &copy; 2023 Location-based weather app with SMS notification.
+    </footer>
+</body>
+</html>

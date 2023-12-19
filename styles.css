@@ -1,0 +1,91 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #66ccff, #ff99cc);
+            color: #333;
+            overflow: auto;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        h1 {
+            color: #333300;
+            font-family: 'Times New Roman', serif;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            text-align: center;
+            margin: 25px auto;
+            animation: fadeInUp 1s ease-in-out;
+            overflow: auto;
+        }
+
+        .form-group,
+        #smsForm input,
+        #smsForm textarea,
+        #smsForm button {
+            margin-bottom: 10px;
+        }
+
+        #weatherDisplay,
+        #smsForm {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #messageDisplay {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #17a2b8;
+            color: #fff;
+            border-radius: 10px;
+            display: none;
+        }
+
+        #windyMap {
+            margin-top: 20px;
+            height: 250px;
+            border-radius: 10px;
+        }
+    
